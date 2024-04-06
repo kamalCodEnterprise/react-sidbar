@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Avenir reg';
+  src: url('./assests/fonts/anenir-next/AvenirNextLTPro-Regular.otf') format('truetype'); /* Adjust the path to match the location of your font files */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('./assests/fonts/avenir_ff/AvenirLTStd-Roman.otf') format('truetype'); /* Adjust the path to match the location of your font files */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir bold';
+  src: url('./assests/fonts/anenir-next/AvenirNextLTPro-Bold.otf') format('truetype'); /* Adjust the path to match the location of your font files */
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +27,142 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Avenir reg', sans-serif !important;
 }
-
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.plus-jakart{
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.lh-6{
+  line-height: 1.6 !important;
+}
+.font-avenir{
+  font-family: 'Avenir', sans-serif !important;
+}
+.font-avenir-reg{
+  font-family: 'Avenir reg', sans-serif !important;
+}
+.font-avenir-bold{
+  font-family: 'Avenir bold', sans-serif !important;
+}
+p{
+  margin: 0 !important;
+}
+.mb-20{
+  margin-bottom: 20px !important;
+}
+.bg-skL{
+  background-color: #EFFBFF;
+}
+.bg-lt-green{
+  background-color: #459E97;
+}
+.border-3g{
+  border: 3px solid #D0E0E5;
+}
+.fs-10{
+  font-size: 10px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-13{
+  font-size: 13px;
+}
+.fs-11{
+  font-size: 11px;
+}
+.fs-9{
+  font-size: 9px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.text-d-green{
+  color: #013D4E;
+}
+.text-d-pur{
+  columns: #00404E;
+}
+.accordion-button::after {
+  content: none !important;
+}
+.accordion-header button {
+  padding: 0;
+}
+.p-16{
+  padding: 16px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.carlus{
+  padding-inline: 16px !important;
+ padding-top: 50px;
+  transition: background-color 0.8s;
+}
+.carlimg {
+  margin-top: -60px;
+}
+.midtext {
+  line-height: 24px !important;
+  padding-block: 16px;
+}
+
+.carlus.active {
+  
+  background: white;
+  box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+  border-radius: 0 0 10px 10px;
+  padding-block: 16px;
+  margin-top: 0 !important;
+  padding-top: 50px;
+}
+.sidmaindiv{
+  max-width: 293px;
+}
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+.sidbardiv{
+  
+  border-radius: 10px 10px  0 0;
+  background: white;
+  box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.07);
+  
+}
+.accordion-item{
+  border: none !important;
+}
+.accordion-body{
+  padding-inline: 16px !important;
+}
+
+.accitems{
+  margin-bottom: 20px;
+}
+.button-bg{
+  background: rgba(255, 255, 255, 0.14) !important;
+  border-radius: 10px !important;
+  border: none !important;
+}
+
+.botomtext {
+  line-height: 30px;
+  margin-top: 10px !important;
+  color: rgba(43, 96, 111, 0.25);
+  font-size: 12px;
+}
+.lh1{
+  line-height: 1;
+  
+}
+.accordion-body > div{
+  cursor: pointer;
 }

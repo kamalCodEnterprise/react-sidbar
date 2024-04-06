@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
+import { Col, Container, Row } from 'react-bootstrap';
+import { useState } from 'react';
 function App() {
+  const [selectedItem, setSelectedItem] = useState('');
+
+    const handleItemClick = (item) => {
+        setSelectedItem(item);
+    };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App my-4">
+      
+      
+      <Container>
+      <Row>
+        <Col sm={4}><Sidebar handleItemClick={handleItemClick} /></Col>
+        <Col sm={8}><MainContent selectedItem={selectedItem} /></Col>
+      </Row>
+      
+    </Container>
+      
     </div>
   );
 }
